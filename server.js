@@ -8,8 +8,8 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.get("/",(req,res)=>{
-    res.send("This is from server");
-    return res;
+   return  res.send("This is from server");
+    
 })
 // app.get('/home', (req, res) => {
 //     res.sendFile(path.resolve(__dirname + '/public/index.html'))
