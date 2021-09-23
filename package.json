@@ -2,12 +2,13 @@
   "name": "batFish",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "starts": "node server.js",
+    "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "webpack": "./node_modules/.bin/webpack -w"
   },
   "repository": {
     "type": "git",
@@ -35,3 +36,4 @@
     "nodemon": "^2.0.12"
   }
 }
+
